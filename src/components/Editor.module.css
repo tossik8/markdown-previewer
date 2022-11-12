@@ -1,0 +1,55 @@
+.textarea{
+    background-color: #8e9dcc;
+    resize: vertical;
+    min-height: 12rem;
+    min-width: 40rem;
+    width: 100%;
+    height: 100%;
+    margin-bottom: -0.25rem;
+    padding: 0 0.4rem;
+}
+.textarea:focus{
+    outline: 0;
+}
+#editor{
+    border: 1px solid black;
+    margin-top: 2rem;
+    box-shadow: 0 0 10px 2px rgba(10,30,40, 0.5);
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    height: 2.5rem;
+    font-weight: 700;
+    border-bottom:1px solid black ;
+    background-color: #d9dbf1;
+}
+
+.icon:hover{
+    color: #f9f9ed;
+    cursor: pointer;
+}
+.fullHeight{
+    height: 100%;
+}
+.fullHeight .textarea{
+    width: 100%;
+    height: 88vh;
+}
+@media screen  and (max-width: 830px){
+    .textarea{
+        min-width: 30rem;
+        width: 70%;
+    }
+}
+@media screen and (max-width: 660px) {
+    #editor{
+        width: 70%;
+    }
+    .textarea{
+        min-width: 50%;
+        width: 100%;
+    }
+}
